@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Travel Planner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Travel Planner</h1>
+        <form id="travelForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="destination" placeholder="Destination (e.g., Dubai)" required>
+            <input type="number" id="days" placeholder="Number of Days" required>
+            <input type="number" id="budget" placeholder="Budget ($)" required>
+            <input type="text" id="interests" placeholder="Interests (Food, Beaches, etc.)" required>
+            <input type="text" id="travelStyle" placeholder="Travel Style (Solo, Family, Friends)" required>
+            
+            <select id="technique">
+                <option value="zero-shot">Zero-Shot Prompting</option>
+                <option value="few-shot">Few-Shot Prompting</option>
+                <option value="structured">Structured Reasoning Prompting</option>
+            </select>
+            
+            <button type="submit">Generate Itinerary</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
